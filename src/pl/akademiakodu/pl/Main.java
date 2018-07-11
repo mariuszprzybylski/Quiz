@@ -1,12 +1,29 @@
 package pl.akademiakodu.pl;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class Main extends JFrame {
+
+    /*
+    public Main - tworzy okna do wpisywania danych
+    zawiera pytanie
+    zawiera przyciski tak i nie
+     */
+
+    public Main() {
+        super("Milionerzy"); //ustawia tytuł okna
+        setSize(500, 500); //ustawia wielkość okna
+        setDefaultCloseOperation(1);//sprawia, że działa przycisk exit
+        setVisible(true);//pokazuje widoczność okna
+    }
+
 
     public static void main(String[] args) {
+
+        Main main = new Main();
 
         List<Question> questionList = new ArrayList<>();
 
