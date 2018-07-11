@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eff64370-ed56-453f-ad7f-6bcc4e7cceb1" name="Default" comment="" />
+    <list default="true" id="eff64370-ed56-453f-ad7f-6bcc4e7cceb1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/Millionares/pl/akademiakodu/pl/Main$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Millionares/pl/akademiakodu/pl/QuestionGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Millionares/pl/akademiakodu/pl/SimpleQuestionGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -201,7 +206,7 @@
       <option name="presentableId" value="Default" />
       <updated>1531212863614</updated>
       <workItem from="1531212867337" duration="1742000" />
-      <workItem from="1531299066709" duration="15912000" />
+      <workItem from="1531299066709" duration="16216000" />
     </task>
     <task id="LOCAL-00001" summary="added JFrame to project">
       <created>1531300764897</created>
@@ -228,7 +233,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17654000" />
+    <option name="totallyTimeSpent" value="17958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
