@@ -1,6 +1,7 @@
 package pl.akademiakodu.pl;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -9,21 +10,40 @@ public class Main extends JFrame {
 
     /*
     public Main - tworzy okna do wpisywania danych
-    zawiera pytanie
-    zawiera przyciski tak i nie
+    private JLabel - zawiera pytanie
+    private JButton - zawiera przyciski tak i nie
      */
+
+    private JButton buttonYes;
+    private JButton buttonNo;
+    private JLabel labelQuestions;
 
     public Main() {
         super("Milionerzy"); //ustawia tytuł okna
         setSize(500, 500); //ustawia wielkość okna
         setDefaultCloseOperation(1);//sprawia, że działa przycisk exit
         setVisible(true);//pokazuje widoczność okna
+    buttonYes = new JButton("Tak");
+    buttonNo = new JButton("Nie");
+    labelQuestions = new JLabel("Czy Polska leży w Europie?", 0);
+    add(labelQuestions);
+    add(buttonYes);
+    add(buttonNo);
+
+    setLayout(new GridLayout(3,1));
     }
 
 
     public static void main(String[] args) {
 
-        Main main = new Main();
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                Main main = new Main();
+
+            }
+        });
+
 
         List<Question> questionList = new ArrayList<>();
 
