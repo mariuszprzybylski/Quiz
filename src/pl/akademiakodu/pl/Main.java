@@ -54,7 +54,7 @@ public class Main extends JFrame implements ActionListener {
         setSize(500, 500); //ustawia wielkość okna
         setDefaultCloseOperation(1);//sprawia, że działa przycisk exit
         setVisible(true);//pokazuje widoczność okna
-        setQuestionGenerator(new SimpleQuestionGenerator());//wywołanie setera/ pod new możemy wstawić dowolny plik z pytaniami
+        setQuestionGenerator(new FileGenerator());//wywołanie setera/ pod new możemy wstawić dowolny plik z pytaniami
         //ustawiamy komkretną klasę, która będzie nam generować pytania
         //za pomocą new NazwaKlasu mozemy podmienić nasz generator za pomoca jednej liniki kodu!
         buttonYes = new JButton("Tak");

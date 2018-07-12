@@ -22,6 +22,7 @@ public class SimpleQuestionGenerator implements QuestionGenerator {
         questionList.add(new Question("Czy Chopin urodził się w Warszawie", true));
         questionList.add(new Question("Czy 2^10 = 20247", true));
 
+
         return questionList;
     }
 }
