@@ -31,16 +31,15 @@ public class FileGenerator implements QuestionGenerator {
         }
 
         for (String line : list) {
-            System.out.println("Linia "+line);
+            System.out.println("Linia " + line);
             int indexQuestionMark = line.indexOf('?');
             String question = line.substring(0, indexQuestionMark + 1);
-            if (line.contains("tak")) {
-                questions.add(new Question(question,true));
-            }
-            if (line.contains("nie")) {
-                questions.add(new Question(question,false));
-            }
 
+            for (AnswerEnum answerEnum : AnswerEnum.values()) {
+                if (line.contains(answerEnum.name())) {
+                    questions.add(new Question(question, answerEnum.isCorrect()));
+                }
+            }
         }
 
         return questions;
